@@ -36,6 +36,6 @@ These are the setup steps that are automated by [setup.yaml](.github/workflows/s
 
 8. Read through `_config.yaml` carefully as there may be other options that must be set.  The comments in this file will provide instructions. 
 
-9. Delete the `CNAME` file from the root of your `master` branch (or change it if you are using a custom domain)
+9. Delete the `CNAME` file from the root of your `main` branch (or change it if you are using a custom domain)
 
 10. Go to your [repository settings and enable GitHub Pages](https://help.github.com/en/enterprise/2.13/user/articles/configuring-a-publishing-source-for-github-pages) with the `gh-pages` branch you created earlier.

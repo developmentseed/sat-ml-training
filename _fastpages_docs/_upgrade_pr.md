@@ -10,5 +10,5 @@ If you would like more fine-grained control over what changes to accept or decli
 
 ### What to Expect After Merging This PR
 
-- GitHub Actions will build your site, which will take 3-4 minutes to complete.  **This will happen anytime you push changes to the master branch of your repository.**  You can monitor the logs of this if you like on the [Actions tab of your repo](https://github.com/{_username_}/{_repo_name_}/actions).
+- GitHub Actions will build your site, which will take 3-4 minutes to complete.  **This will happen anytime you push changes to the main branch of your repository.**  You can monitor the logs of this if you like on the [Actions tab of your repo](https://github.com/{_username_}/{_repo_name_}/actions).
 - You can monitor the status of your site in the GitHub Pages section of your [repository settings](https://github.com/{_username_}/{_repo_name_}/settings).
