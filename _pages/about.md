@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+Material on this website is available under ____ license. It was originally developed by [Development Seed](https://developmentseed.org) for the [SERVIR](https://www.nasa.gov/mission_pages/servir/index.html) program (NASA & USAID). 
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
