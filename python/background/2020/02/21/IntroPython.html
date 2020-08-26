@@ -97,7 +97,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -142,21 +142,23 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#General-python">General python </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Goals">Goals </a></li>
+<li class="toc-entry toc-h3"><a href="#Lessons">Lessons </a></li>
 <li class="toc-entry toc-h3"><a href="#Additional-References">Additional References </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Python-for-Data-Science">Python for Data Science </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#Numpy">Numpy </a>
+<li class="toc-entry toc-h3"><a href="#Numpy-Arrays">Numpy Arrays </a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#Lessons:">Lessons: </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h3"><a href="#Pandas">Pandas </a>
+<li class="toc-entry toc-h3"><a href="#Pandas-DataFrames">Pandas DataFrames </a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#Lessons:">Lessons: </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h3"><a href="#References">References </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Plotting">Plotting </a></li>
@@ -182,19 +184,8 @@ window.onload = wrap_img;
 <h2 id="General-python">
 <a class="anchor" href="#General-python" aria-hidden="true"><span class="octicon octicon-link"></span></a>General python<a class="anchor-link" href="#General-python"> </a>
 </h2>
-<ul>
-<li>An introduction or refresher for Python 3\
-Online Videos from
-<a href="https://www.udemy.com/course/pythonforbeginnersintro/">Udemy</a>\
-AND/OR</li>
-<li>Interactive lessons with examples and quizzes from
-<a href="https://www.codecademy.com/learn/learn-python-3">CodeAcademy</a>
-(Recommend all lessons except #10 on Classes)</li>
-</ul>
-<p>OR</p>
-<ul>
-<li><a href="https://github.com/jakevdp/WhirlwindTourOfPython">https://github.com/jakevdp/WhirlwindTourOfPython</a></li>
-</ul>
+<p>In this section we review the fundamentals of using the Python programming language with a focus on being able to use python for geospatial data science with machine learning. Based on the list of goals, and your prior experience select from the list of tutorials. Feel free to do as many as you like, and skim lightly if you are already familiar with the topics.</p>
+<p>For local practice you can install and user the <a href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Python with Conda</a>, we recommend coding in a Jupyter Notebook which is similar to the Google Colab online editor that will be used in the other tutorials on this site.</p>
 <h3 id="Goals">
 <a class="anchor" href="#Goals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Goals<a class="anchor-link" href="#Goals"> </a>
 </h3>
@@ -204,14 +195,11 @@ AND/OR</li>
 <ul>
 <li>Basic Types: Integers (Whole numbers), Floats (Numbers with
 decimals), Strings</li>
-<li>
-<p>Constructed Types: Lists, Dictionaries</p>
-<ul>
-<li>Note: Dictionaries and the JSON file format are very
-<pre><code>similar in how they structure data.</code></pre>
-</li>
-</ul>
-</li>
+<li>Constructed Types: Lists, Dictionaries
+<div class="flash">
+    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
+    <strong>Note: </strong>Dictionaries and the JSON file format are very
+</div>                similar in how they structure data.</li>
 </ul>
 </li>
 <li>
@@ -240,6 +228,20 @@ process</p>
 </ul>
 </li>
 </ul>
+<h3 id="Lessons">
+<a class="anchor" href="#Lessons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lessons<a class="anchor-link" href="#Lessons"> </a>
+</h3>
+<p>Pick from the following lessons. We recommend at least 1, and if you choose to watch the videos then we suggest you also do some of the Interactive coding examples from the other options. Trying some code is one of the best ways to learn.</p>
+<ol>
+<li>An introduction or refresher for Python 3\
+Online Videos from
+<a href="https://www.udemy.com/course/pythonforbeginnersintro/">Udemy</a>\</li>
+<li>Interactive lessons with examples and quizzes from
+<a href="https://www.codecademy.com/learn/learn-python-3">CodeAcademy</a>
+All lessons except #10 on Classes (optional)</li>
+<li>
+<a href="https://github.com/jakevdp/WhirlwindTourOfPython">Demonstration Notebooks</a> that  Accompany the Whirlwind Tour Of Python Book (Available for free). Lessons 1-9, everything else is optional.</li>
+</ol>
 <h3 id="Additional-References">
 <a class="anchor" href="#Additional-References" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional References<a class="anchor-link" href="#Additional-References"> </a>
 </h3>
@@ -263,25 +265,19 @@ process</p>
 <h2 id="Python-for-Data-Science">
 <a class="anchor" href="#Python-for-Data-Science" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python for Data Science<a class="anchor-link" href="#Python-for-Data-Science"> </a>
 </h2>
-<ul>
-<li>Primary Source 
-<a href="https://jakevdp.github.io/PythonDataScienceHandbook/index.html">https://jakevdp.github.io/PythonDataScienceHandbook/index.html</a>\</li>
-<li>Secondary Source
-<a href="https://datacarpentry.org/python-ecology-lesson/">https://datacarpentry.org/python-ecology-lesson/</a>
-</li>
-</ul>
-<h3 id="Numpy">
-<a class="anchor" href="#Numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Numpy<a class="anchor-link" href="#Numpy"> </a>
+<p>In this section we specifically review Python for Data Science, focusing on the main data structures used to manipulate data, numpy arrays and pandas dataframes.</p>
+<h3 id="Numpy-Arrays">
+<a class="anchor" href="#Numpy-Arrays" aria-hidden="true"><span class="octicon octicon-link"></span></a>Numpy Arrays<a class="anchor-link" href="#Numpy-Arrays"> </a>
 </h3>
 <p></p>
 <div class="flash flash-warn">
     <svg class="octicon octicon-zap octicon octicon-zap" viewbox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"></path></svg>
-    <strong>Important: </strong>Understanding multidimensional data arrays as a data
-</div>     structure
+    <strong>Important: </strong>Understanding multidimensional data arrays as a data structure.
+</div>
 <div class="flash">
-    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
-    <strong>Note: </strong>Numpy array data must all be of the same type (e.g. Integer,
-</div>     Float, etc…)
+    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
+    <strong>Note: </strong>Numpy array data must all be of the same type (e.g. Integer, Float, etc…)
+</div>
 <h4 id="Lessons:">
 <a class="anchor" href="#Lessons:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lessons:<a class="anchor-link" href="#Lessons:"> </a>
 </h4>
@@ -302,36 +298,50 @@ process</p>
 <p><a href="https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html">Aggregations: Min, Max, and Everything In Between</a></p>
 </li>
 </ul>
-<h3 id="Pandas">
-<a class="anchor" href="#Pandas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pandas<a class="anchor-link" href="#Pandas"> </a>
+<h3 id="Pandas-DataFrames">
+<a class="anchor" href="#Pandas-DataFrames" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pandas DataFrames<a class="anchor-link" href="#Pandas-DataFrames"> </a>
 </h3>
 <p></p>
 <div class="flash flash-warn">
     <svg class="octicon octicon-zap octicon octicon-zap octicon octicon-zap" viewbox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"></path></svg>
     <strong>Important: </strong>Understanding data frames as a table (sheet), with data
 </div>records as rows, and data attributes as columns. Each column
-can be a different data type
+can be a different data type.
 <h4 id="Lessons:">
 <a class="anchor" href="#Lessons:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lessons:<a class="anchor-link" href="#Lessons:"> </a>
 </h4>
 <ul>
 <li>
-<p>Introduction</p>
+<p><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html">Introduction</a></p>
 </li>
 <li>
 <p>Importing and exporting
- <a href="https://pythonbasics.org/read-csv-with-pandas/">CSV</a> and
- <a href="https://pythonbasics.org/pandas-json/">JSON</a> data sources</p>
+  <a href="https://pythonbasics.org/read-csv-with-pandas/">CSV</a> and
+  <a href="https://pythonbasics.org/pandas-json/">JSON</a> data sources</p>
 </li>
 <li>
 <p><a href="https://jakevdp.github.io/PythonDataScienceHandbook/03.08-aggregation-and-grouping.html">Summarizing (aggregating)
- data</a></p>
+  data</a></p>
 </li>
 <li>
 <p><a href="https://jakevdp.github.io/PythonDataScienceHandbook/03.02-data-indexing-and-selection.html#Data-Selection-in-DataFrame">Selecting relevant data records</a></p>
 </li>
 <li>
-<p>(Optional) <a href="https://jakevdp.github.io/PythonDataScienceHandbook/03.01-introducing-pandas-objects.html">More details</a></p>
+<p><a href="https://datacarpentry.org/python-ecology-lesson/02-starting-with-data/index.html">All in one</a></p>
+</li>
+<li>
+<p>(Optional) <a href="https://jakevdp.github.io/PythonDataScienceHandbook/03.01-introducing-pandas-objects.html">Further Reading and Materials</a></p>
+</li>
+</ul>
+<h3 id="References">
+<a class="anchor" href="#References" aria-hidden="true"><span class="octicon octicon-link"></span></a>References<a class="anchor-link" href="#References"> </a>
+</h3>
+<ul>
+<li>Primary Source 
+<a href="https://jakevdp.github.io/PythonDataScienceHandbook/index.html">PythonDataScienceHandbook</a>
+</li>
+<li>Secondary Source
+<a href="https://datacarpentry.org/python-ecology-lesson/">Datacarpentry python-ecology-lesson</a>
 </li>
 </ul>
 
