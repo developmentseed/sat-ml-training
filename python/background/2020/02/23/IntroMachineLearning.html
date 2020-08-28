@@ -6,7 +6,7 @@
 <title>Machine learning (ML) | Satellite Machine Learning Training</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Machine learning (ML)" />
-<meta name="author" content="Zhuang-Fang Yi, Alex Mandel" />
+<meta name="author" content="Zhuang-Fang Yi, Lilly Thomas, Alex Mandel" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A selection of background material and resources for Machine Learning." />
 <meta property="og:description" content="A selection of background material and resources for Machine Learning." />
@@ -17,13 +17,13 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-23T00:00:00-06:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Zhuang-Fang Yi, Alex Mandel"},"description":"A selection of background material and resources for Machine Learning.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html","dateModified":"2020-02-23T00:00:00-06:00","datePublished":"2020-02-23T00:00:00-06:00","headline":"Machine learning (ML)","image":"https://developmentseed.github.io/sat-ml-training/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Zhuang-Fang Yi, Lilly Thomas, Alex Mandel"},"description":"A selection of background material and resources for Machine Learning.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html","dateModified":"2020-02-23T00:00:00-06:00","datePublished":"2020-02-23T00:00:00-06:00","headline":"Machine learning (ML)","image":"https://developmentseed.github.io/sat-ml-training/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/sat-ml-training/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://developmentseed.github.io/sat-ml-training/feed.xml" title="Satellite Machine Learning Training" /><link rel="shortcut icon" type="image/x-icon" href="/sat-ml-training/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Machine learning (ML) | Satellite Machine Learning Training</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Machine learning (ML)" />
-<meta name="author" content="Zhuang-Fang Yi, Alex Mandel" />
+<meta name="author" content="Zhuang-Fang Yi, Lilly Thomas, Alex Mandel" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A selection of background material and resources for Machine Learning." />
 <meta property="og:description" content="A selection of background material and resources for Machine Learning." />
@@ -34,7 +34,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-23T00:00:00-06:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Zhuang-Fang Yi, Alex Mandel"},"description":"A selection of background material and resources for Machine Learning.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html","dateModified":"2020-02-23T00:00:00-06:00","datePublished":"2020-02-23T00:00:00-06:00","headline":"Machine learning (ML)","image":"https://developmentseed.github.io/sat-ml-training/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Zhuang-Fang Yi, Lilly Thomas, Alex Mandel"},"description":"A selection of background material and resources for Machine Learning.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html","dateModified":"2020-02-23T00:00:00-06:00","datePublished":"2020-02-23T00:00:00-06:00","headline":"Machine learning (ML)","image":"https://developmentseed.github.io/sat-ml-training/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/python/background/2020/02/23/IntroMachineLearning.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -93,7 +93,7 @@ window.onload = wrap_img;
         Feb 23, 2020
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">Zhuang-Fang Yi, Alex Mandel</span></span>
+            <span class="p-author h-card" itemprop="name">Zhuang-Fang Yi, Lilly Thomas, Alex Mandel</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -139,6 +139,8 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#How-to-navigate-this-guide">How to navigate this guide </a></li>
+<li class="toc-entry toc-h2"><a href="#1.2.0-General-Machine-Learning-Best-Practices">1.2.0 General Machine Learning Best Practices </a></li>
 <li class="toc-entry toc-h2"><a href="#1.2.1-Classic-Machine-Learning-(ML)">1.2.1 Classic Machine Learning (ML) </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#RandomForest">RandomForest </a></li>
@@ -147,8 +149,9 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#1.2.2-Deep-learning">1.2.2 Deep learning </a>
 <ul>
+<li class="toc-entry toc-h3"><a href="#Deep-Learning-vs-Classical-Machine-Learning">Deep Learning vs Classical Machine Learning </a></li>
+<li class="toc-entry toc-h3"><a href="#Semantic-Segmentation">Semantic Segmentation </a></li>
 <li class="toc-entry toc-h3"><a href="#TF-dynamic-UNet">TF dynamic UNet </a></li>
-<li class="toc-entry toc-h3"><a href="#TensorFlow-FCN">TensorFlow FCN </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#References:">References: </a></li>
@@ -171,6 +174,37 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-to-navigate-this-guide">
+<a class="anchor" href="#How-to-navigate-this-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to navigate this guide<a class="anchor-link" href="#How-to-navigate-this-guide"> </a>
+</h2>
+<p>The order below should navigate the reader progressively through the topics that we will cover in the tutorials.  The first section (1.2.0) is intended to build an understanding of machine learning fundamentals which will inform the following sections. Read the main links to articles, view/read but no need to try the code implementation examples, and for further learning - please see the references listed at the end.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.0-General-Machine-Learning-Best-Practices">
+<a class="anchor" href="#1.2.0-General-Machine-Learning-Best-Practices" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.2.0 General Machine Learning Best Practices<a class="anchor-link" href="#1.2.0-General-Machine-Learning-Best-Practices"> </a>
+</h2>
+<ul>
+<li><a href="https://medium.com/towards-artificial-intelligence/what-is-machine-learning-ml-b58162f97ec7">What is Machine Learning?</a></li>
+<li><a href="https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7">About Train, Validation and Test Sets in Machine Learning</a></li>
+<li><a href="https://towardsdatascience.com/handling-imbalanced-datasets-in-machine-learning-7a0e84220f28">Handling imbalanced datasets in machine learning</a></li>
+<li>
+<a href="https://arxiv.org/pdf/1906.06821.pdf">Model Optimization</a> read Abstract and section II (first two paragraphs)</li>
+<li>
+<a href="https://web.stanford.edu/~rezab/classes/cme323/S16/projects_reports/hedge_usmani.pdf">Parallel and Distributed Deep Learning</a> read sections 1.2, 2, 3</li>
+<li><a href="https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234">Metrics to Evaluate your Machine Learning Algorithm</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="1.2.1-Classic-Machine-Learning-(ML)">
 <a class="anchor" href="#1.2.1-Classic-Machine-Learning-(ML)" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.2.1 Classic Machine Learning (ML)<a class="anchor-link" href="#1.2.1-Classic-Machine-Learning-(ML)"> </a>
 </h2>
@@ -178,65 +212,34 @@ window.onload = wrap_img;
 <a class="anchor" href="#RandomForest" aria-hidden="true"><span class="octicon octicon-link"></span></a>RandomForest<a class="anchor-link" href="#RandomForest"> </a>
 </h3>
 <ul>
-<li>Decision tree and RandomForest classifier
-<a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.08-random-forests.html">in-depth</a>
-or <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">w/
-sciki-learn</a>
+<li>
+<a href="https://medium.com/@williamkoehrsen/random-forest-simple-explanation-377895a60d2d">Random Forest Simple Explanation</a> read sections: (1) Decision Tree: The Building Block and (2) From Decision Tree to Random Forest</li>
+<li>
+<p>Decision tree and RandomForest classifier
+<a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.08-random-forests.html">in-depth</a> for generic coding implementations</p>
 </li>
 <li>
-<p>RandomForest classifier in LULC case (<a href="https://github.com/developmentseed/servir-training-notebooks/blob/master/crop_type_mapping/notebooks/randomforest.ipynb">DS
-example</a>)</p>
-<ul>
-<li>
-<p>Best practice of train, validation and test split;</p>
+<p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">w/
+sciki-learn</a> for the specific function</p>
 </li>
-<li>
-<p>Dealing with class imbalance</p>
-</li>
-<li>
-<p>Optimize estimators and leaves setting</p>
-</li>
-<li>
-<p>Model parallel training and prediction</p>
-</li>
-<li>
-<p>Model evaluation;</p>
-</li>
-</ul>
-</li>
+<li>RandomForest classifier in LULC case (<a href="https://github.com/developmentseed/servir-training-notebooks/blob/master/crop_type_mapping/notebooks/randomforest.ipynb">Development Seed
+example</a>)</li>
 </ul>
 <h3 id="LightGBM">
 <a class="anchor" href="#LightGBM" aria-hidden="true"><span class="octicon octicon-link"></span></a>LightGBM<a class="anchor-link" href="#LightGBM"> </a>
 </h3>
 <ul>
 <li>
-<p><a href="https://lightgbm.readthedocs.io/en/latest/">LightGBM</a></p>
-<ul>
-<li>Gradient boost;</li>
-</ul>
+<a href="https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf">LightGBM: A Highly Efficient Gradient Boosting
+Decision Tree</a> read Introduction and section 2.1</li>
+<li>
+<p><a href="https://lightgbm.readthedocs.io/en/latest/">LightGBM python library</a> this is the library that we will use in the tutorial</p>
 </li>
 <li>
-<p>LightGBM in crop type mapping case (<a href="https://github.com/developmentseed/servir-training-notebooks/blob/master/crop_type_mapping/notebooks/LightGBM.ipynb">DS
+<p>LightGBM in crop type mapping case (<a href="https://github.com/developmentseed/servir-training-notebooks/blob/master/crop_type_mapping/notebooks/LightGBM.ipynb">Development Seed
 example</a>
 and SentinelHub <a href="https://github.com/sentinel-hub/eo-learn/blob/master/examples/land-cover-map/SI_LULC_pipeline.ipynb">eo-learn
 example</a>)</p>
-<ul>
-<li>
-<p>Best practice of train, validation and test split;</p>
-</li>
-<li>
-<p>Dealing with class imbalance</p>
-</li>
-<li>
-<p>Hyperparameter tuning</p>
-</li>
-<li>
-<p>Model parallel training and prediction with CPU and GPU</p>
-</li>
-<li>
-<p>Model evaluation;</p>
-</li>
-</ul>
 </li>
 </ul>
 
@@ -249,22 +252,27 @@ example</a>)</p>
 <h2 id="1.2.2-Deep-learning">
 <a class="anchor" href="#1.2.2-Deep-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.2.2 Deep learning<a class="anchor-link" href="#1.2.2-Deep-learning"> </a>
 </h2>
+<h3 id="Deep-Learning-vs-Classical-Machine-Learning">
+<a class="anchor" href="#Deep-Learning-vs-Classical-Machine-Learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deep Learning vs Classical Machine Learning<a class="anchor-link" href="#Deep-Learning-vs-Classical-Machine-Learning"> </a>
+</h3>
+<ul>
+<li>
+<a href="https://www.kdnuggets.com/2015/01/deep-learning-explanation-what-how-why.html">Deep Learning in a Nutshell – what it is, how it works, why care?</a> read sections (1) What is Machine Learning? and (2) A First Look at Neural Networks</li>
+</ul>
+<h3 id="Semantic-Segmentation">
+<a class="anchor" href="#Semantic-Segmentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Semantic Segmentation<a class="anchor-link" href="#Semantic-Segmentation"> </a>
+</h3>
+<ul>
+<li><a href="https://towardsdatascience.com/semantic-segmentation-with-deep-learning-a-guide-and-code-e52fc8958823">Semantic Segmentation with Deep Learning</a></li>
+</ul>
 <h3 id="TF-dynamic-UNet">
 <a class="anchor" href="#TF-dynamic-UNet" aria-hidden="true"><span class="octicon octicon-link"></span></a>TF dynamic UNet<a class="anchor-link" href="#TF-dynamic-UNet"> </a>
 </h3>
 <ul>
-<li>Image classification, object detection</li>
-<li>Semantic Segment and dynamic UNet</li>
-<li>Dynamic UNet in LULC case (<a href="https://github.com/developmentseed/servir-training-notebooks/blob/master/lulc/LULC_fastai.ipynb">DS
+<li>
+<a href="https://arxiv.org/pdf/1505.04597.pdf">UNet</a> read sections 1 and 2</li>
+<li>Dynamic UNet in LULC case (<a href="https://github.com/developmentseed/servir-training-notebooks/blob/master/lulc/LULC_fastai.ipynb">Development Seed
 example</a>)</li>
-</ul>
-<h3 id="TensorFlow-FCN">
-<a class="anchor" href="#TensorFlow-FCN" aria-hidden="true"><span class="octicon octicon-link"></span></a>TensorFlow FCN<a class="anchor-link" href="#TensorFlow-FCN"> </a>
-</h3>
-<ul>
-<li>Tensorflow</li>
-<li>Tensorflow FCN</li>
-<li>Tensorflow FCN in LULC</li>
 </ul>
 
 </div>
