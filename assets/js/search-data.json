@@ -106,7 +106,7 @@
   
       ,"page1": {
           "title": "About",
-          "content": "Material on this website is available under This work is licensed under a Creative Commons Attribution 4.0 International License. . It was developed by Development Seed for the SERVIR GLOBAL program from NASA &amp; USAID). . . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "This work is licensed under a Creative Commons Attribution 4.0 International License. . It was developed by Development Seed for the SERVIR GLOBAL program. NASA &amp; USAID), with feedback from SERVIR partners ICIMOD, RCMRD, and . . This website is powered by fastpages, a blogging platform that natively supports Jupyter notebooks in addition to other formats. .",
           "url": "https://developmentseed.github.io/sat-ml-training/about/",
           "relUrl": "/about/",
           "date": ""
