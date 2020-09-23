@@ -1,8 +1,16 @@
 {%- assign social = site.minima.social_links -%}
 
 <ul class="social-media-list">
-  <li><a href="https://developmentseed.org"><img src="{{site.baseurl}}/images/ds-logo-symbol--pos-neg.svg" /></a></li>
-  <li><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></li>
+  <li>
+    <a href="https://developmentseed.org" style="padding:0px">
+      <img src="{{site.baseurl}}/images/ds-logo-symbol--pos-neg.svg" style="border-width:0;height:40px" />
+    </a>
+  </li>
+  <li>
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" style="padding:0px">
+      <img alt="Creative Commons License" style="border-width:0;height:40px" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+    </a>
+  </li>
   {%- for glb in social.gitlab -%}{%- if glb.username and glb.instance -%}<li><a rel="me" href="https://{{ glb.instance | cgi_escape | escape}}/{{glb.username}}" title="{{ glb.username | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#gitlab' | relative_url }}"></use></svg></a></li>{%- endif -%}{%- endfor -%}
   {%- if social.dribbble -%}<li><a rel="me" href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" title="{{ social.dribbble | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg></a></li>{%- endif -%}
   {%- if social.facebook -%}<li><a rel="me" href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" title="{{ social.facebook | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg></a></li>{%- endif -%}
