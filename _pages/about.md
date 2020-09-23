@@ -14,6 +14,6 @@ It was developed by [Development Seed](https://developmentseed.org) for the [SER
 
 ![Sponsor Logos]({{site.baseurl}}/images/servir.png "Sponsor Logos")
 
-Full source code can be found on [Github](https://github.com/{{site.github_username}}/{{site.github_repo})
+Full source code can be found on [Github](https://github.com/{{site.github_username}}/{{site.github_repo}})
 
 > This website is powered by **[fastpages](https://github.com/fastai/fastpages)**, a blogging platform that natively supports Jupyter notebooks in addition to other formats.
