@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      8 min read
     
 </span></p>
 
@@ -358,32 +358,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
-Instructions for updating:
-non-resource variables are not supported in the long term
-Running command using Cloud API.  Set --no-use_cloud_api to go back to using the API
-
-To authorize access needed by Earth Engine, open the following URL in a web browser and follow the instructions. If the web browser does not start automatically, please manually browse the URL below.
-
-    https://accounts.google.com/o/oauth2/auth?client_id=517222506229-vsmmajv00ul0bs7p89v5m89qs8eb9359.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fearthengine+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdevstorage.full_control&amp;redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&amp;response_type=code&amp;code_challenge=y6I6wNb1lkhV68Kyok-So5qSykrYXJHLJHTqyhHS_NI&amp;code_challenge_method=S256
-
-The authorization workflow will generate a code, which you should paste in the box below. 
-Enter verification code: 4/4gHXqZdM6-hcn6xZLOA4Al_OWtK8-NlZtQRx47fPIWXVXd9OtbHkwMQ
-
-Successfully saved authorization token.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -459,55 +433,6 @@ Successfully saved authorization token.
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already satisfied: folium in /usr/local/lib/python3.6/dist-packages (0.8.3)
-Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from folium) (1.15.0)
-Requirement already satisfied: numpy in /usr/local/lib/python3.6/dist-packages (from folium) (1.18.5)
-Requirement already satisfied: jinja2 in /usr/local/lib/python3.6/dist-packages (from folium) (2.11.2)
-Requirement already satisfied: branca&gt;=0.3.0 in /usr/local/lib/python3.6/dist-packages (from folium) (0.4.1)
-Requirement already satisfied: requests in /usr/local/lib/python3.6/dist-packages (from folium) (2.23.0)
-Requirement already satisfied: MarkupSafe&gt;=0.23 in /usr/local/lib/python3.6/dist-packages (from jinja2-&gt;folium) (1.1.1)
-Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /usr/local/lib/python3.6/dist-packages (from requests-&gt;folium) (3.0.4)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /usr/local/lib/python3.6/dist-packages (from requests-&gt;folium) (1.24.3)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.6/dist-packages (from requests-&gt;folium) (2.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.6/dist-packages (from requests-&gt;folium) (2020.6.20)
-Collecting geopandas
-  Downloading https://files.pythonhosted.org/packages/f7/a4/e66aafbefcbb717813bf3a355c8c4fc3ed04ea1dd7feb2920f2f4f868921/geopandas-0.8.1-py2.py3-none-any.whl (962kB)
-     |████████████████████████████████| 972kB 6.8MB/s 
-Collecting pyproj&gt;=2.2.0
-  Downloading https://files.pythonhosted.org/packages/e5/c3/071e080230ac4b6c64f1a2e2f9161c9737a2bc7b683d2c90b024825000c0/pyproj-2.6.1.post1-cp36-cp36m-manylinux2010_x86_64.whl (10.9MB)
-     |████████████████████████████████| 10.9MB 19.5MB/s 
-Collecting fiona
-  Downloading https://files.pythonhosted.org/packages/36/8b/e8b2c11bed5373c8e98edb85ce891b09aa1f4210fd451d0fb3696b7695a2/Fiona-1.8.17-cp36-cp36m-manylinux1_x86_64.whl (14.8MB)
-     |████████████████████████████████| 14.8MB 283kB/s 
-Requirement already satisfied: shapely in /usr/local/lib/python3.6/dist-packages (from geopandas) (1.7.1)
-Requirement already satisfied: pandas&gt;=0.23.0 in /usr/local/lib/python3.6/dist-packages (from geopandas) (1.0.5)
-Collecting cligj&gt;=0.5
-  Downloading https://files.pythonhosted.org/packages/e4/be/30a58b4b0733850280d01f8bd132591b4668ed5c7046761098d665ac2174/cligj-0.5.0-py3-none-any.whl
-Collecting munch
-  Downloading https://files.pythonhosted.org/packages/cc/ab/85d8da5c9a45e072301beb37ad7f833cd344e04c817d97e0cc75681d248f/munch-2.5.0-py2.py3-none-any.whl
-Requirement already satisfied: six&gt;=1.7 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (1.15.0)
-Requirement already satisfied: attrs&gt;=17 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (20.2.0)
-Collecting click-plugins&gt;=1.0
-  Downloading https://files.pythonhosted.org/packages/e9/da/824b92d9942f4e472702488857914bdd50f73021efea15b4cad9aca8ecef/click_plugins-1.1.1-py2.py3-none-any.whl
-Requirement already satisfied: click&lt;8,&gt;=4.0 in /usr/local/lib/python3.6/dist-packages (from fiona-&gt;geopandas) (7.1.2)
-Requirement already satisfied: numpy&gt;=1.13.3 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.23.0-&gt;geopandas) (1.18.5)
-Requirement already satisfied: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.23.0-&gt;geopandas) (2018.9)
-Requirement already satisfied: python-dateutil&gt;=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.23.0-&gt;geopandas) (2.8.1)
-Installing collected packages: pyproj, cligj, munch, click-plugins, fiona, geopandas
-Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.17 geopandas-0.8.1 munch-2.5.0 pyproj-2.6.1.post1
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
