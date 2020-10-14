@@ -6,31 +6,33 @@
 <title>Inference in Google Earth Engine + Colab | Satellite Machine Learning Training</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Inference in Google Earth Engine + Colab" />
+<meta name="author" content="Drew Bollinger" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="How to apply Machine Learning analysis to satellite data." />
-<meta property="og:description" content="How to apply Machine Learning analysis to satellite data." />
+<meta name="description" content="Scaling up machine learning with GEE and Google Colab." />
+<meta property="og:description" content="Scaling up machine learning with GEE and Google Colab." />
 <link rel="canonical" href="https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference" />
 <meta property="og:url" content="https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference" />
 <meta property="og:site_name" content="Satellite Machine Learning Training" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-09T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"How to apply Machine Learning analysis to satellite data.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference","dateModified":"2020-10-09T00:00:00-05:00","datePublished":"2020-10-09T00:00:00-05:00","headline":"Inference in Google Earth Engine + Colab","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Drew Bollinger"},"description":"Scaling up machine learning with GEE and Google Colab.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference","dateModified":"2020-10-09T00:00:00-05:00","datePublished":"2020-10-09T00:00:00-05:00","headline":"Inference in Google Earth Engine + Colab","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/sat-ml-training/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://developmentseed.github.io/sat-ml-training/feed.xml" title="Satellite Machine Learning Training" /><link rel="shortcut icon" type="image/x-icon" href="/sat-ml-training/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Inference in Google Earth Engine + Colab | Satellite Machine Learning Training</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Inference in Google Earth Engine + Colab" />
+<meta name="author" content="Drew Bollinger" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="How to apply Machine Learning analysis to satellite data." />
-<meta property="og:description" content="How to apply Machine Learning analysis to satellite data." />
+<meta name="description" content="Scaling up machine learning with GEE and Google Colab." />
+<meta property="og:description" content="Scaling up machine learning with GEE and Google Colab." />
 <link rel="canonical" href="https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference" />
 <meta property="og:url" content="https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference" />
 <meta property="og:site_name" content="Satellite Machine Learning Training" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-09T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"How to apply Machine Learning analysis to satellite data.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference","dateModified":"2020-10-09T00:00:00-05:00","datePublished":"2020-10-09T00:00:00-05:00","headline":"Inference in Google Earth Engine + Colab","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Drew Bollinger"},"description":"Scaling up machine learning with GEE and Google Colab.","@type":"BlogPosting","url":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference","dateModified":"2020-10-09T00:00:00-05:00","datePublished":"2020-10-09T00:00:00-05:00","headline":"Inference in Google Earth Engine + Colab","mainEntityOfPage":{"@type":"WebPage","@id":"https://developmentseed.github.io/sat-ml-training/Earth-Engine-Inference"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -85,9 +87,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Inference in Google Earth Engine + Colab</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-10-09T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Inference in Google Earth Engine + Colab</h1><p class="page-description">Scaling up machine learning with GEE and Google Colab.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-10-09T00:00:00-05:00" itemprop="datePublished">
         Oct 9, 2020
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Drew Bollinger</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -122,7 +126,15 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Inference-in-Google-Earth-Engine-+-Colab">Inference in Google Earth Engine + Colab </a></li>
+<li class="toc-entry toc-h1"><a href="#Setup-software-libraries">Setup software libraries </a></li>
+<li class="toc-entry toc-h1"><a href="#Variables">Variables </a></li>
+<li class="toc-entry toc-h1"><a href="#Imagery">Imagery </a></li>
+<li class="toc-entry toc-h1"><a href="#Load-our-saved-model">Load our saved model </a></li>
+<li class="toc-entry toc-h1"><a href="#Prediction">Prediction </a></li>
+<li class="toc-entry toc-h1"><a href="#Display-the-output">Display the output </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -138,34 +150,24 @@ window.onload = wrap_img;
 </div>
     
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Inference in Google Earth Engine + Colab</span>
-<span class="o">&gt;</span> <span class="n">Scaling</span> <span class="n">up</span> <span class="n">machine</span> <span class="n">learning</span> <span class="k">with</span> <span class="n">GEE</span> <span class="ow">and</span> <span class="n">Google</span> <span class="n">Colab</span><span class="o">.</span>
-
-<span class="o">-</span> <span class="n">toc</span><span class="p">:</span> <span class="n">true</span> 
-<span class="o">-</span> <span class="n">badges</span><span class="p">:</span> <span class="n">true</span>
-<span class="o">-</span> <span class="n">author</span><span class="p">:</span> <span class="n">Drew</span> <span class="n">Bollinger</span>
-<span class="o">-</span> <span class="n">comments</span><span class="p">:</span> <span class="n">false</span>
-<span class="o">-</span> <span class="n">hide</span><span class="p">:</span> <span class="n">false</span>
-<span class="o">-</span> <span class="n">sticky_rank</span><span class="p">:</span> <span class="mi">11</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Setup-software-libraries">Setup software libraries<a class="anchor-link" href="#Setup-software-libraries"> </a></h1><p>Authenticate and import as necessary.</p>
+<h1 id="Inference-in-Google-Earth-Engine-+-Colab">
+<a class="anchor" href="#Inference-in-Google-Earth-Engine-+-Colab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inference in Google Earth Engine + Colab<a class="anchor-link" href="#Inference-in-Google-Earth-Engine-+-Colab"> </a>
+</h1>
+<p>Here we demonstrate how to take a trained model and apply to to imagery with Google Earth Engine + Colab + Tensorflow. This is adapted from an <a href="https://developers.google.com/earth-engine/guides/tf_examples">Earth Engine &lt;&gt; TensorFlow demonstration notebook</a>. We'll be taking the trained model from the <a href="https://developmentseed.org/sat-ml-training/DeepLearning_CropType_Segmentation">Deep Learning Crop Type Segmentation Model Example</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Setup-software-libraries">
+<a class="anchor" href="#Setup-software-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup software libraries<a class="anchor-link" href="#Setup-software-libraries"> </a>
+</h1>
+<p>Authenticate and import as necessary.</p>
 
 </div>
 </div>
@@ -199,7 +201,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Mount our Google Drive</span>
 <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">'/content/drive'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -232,9 +234,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Variables">Variables<a class="anchor-link" href="#Variables"> </a></h1><p>Declare the variables that will be in use throughout the notebook.</p>
+<h1 id="Variables">
+<a class="anchor" href="#Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables<a class="anchor-link" href="#Variables"> </a>
+</h1>
+<p>Declare the variables that will be in use throughout the notebook.</p>
 
 </div>
 </div>
@@ -247,11 +253,11 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Specify names locations for outputs in Google Drive. </span>
-<span class="n">FOLDER</span> <span class="o">=</span> <span class="s1">&#39;servir-inference-demo&#39;</span>
-<span class="n">ROOT_DIR</span> <span class="o">=</span> <span class="s1">&#39;/content/drive/My Drive/&#39;</span>
+<span class="n">FOLDER</span> <span class="o">=</span> <span class="s1">'servir-inference-demo'</span>
+<span class="n">ROOT_DIR</span> <span class="o">=</span> <span class="s1">'/content/drive/My Drive/'</span>
 
 <span class="c1"># Specify inputs (Sentinel indexes) to the model.</span>
-<span class="n">BANDS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;NDVI&#39;</span><span class="p">,</span> <span class="s1">&#39;WDRVI&#39;</span><span class="p">,</span> <span class="s1">&#39;SAVI&#39;</span><span class="p">]</span>
+<span class="n">BANDS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'NDVI'</span><span class="p">,</span> <span class="s1">'WDRVI'</span><span class="p">,</span> <span class="s1">'SAVI'</span><span class="p">]</span>
 
 <span class="c1"># Specify the size and shape of patches expected by the model.</span>
 <span class="n">KERNEL_SIZE</span> <span class="o">=</span> <span class="mi">224</span>
@@ -265,9 +271,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Imagery">Imagery<a class="anchor-link" href="#Imagery"> </a></h1><p>Gather and setup the imagery to use for inputs.  It's important that we match the index inputs from the earlier analysis. This is a three-month Sentinel-2 composite.  Display it in the notebook for a sanity check.</p>
+<h1 id="Imagery">
+<a class="anchor" href="#Imagery" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imagery<a class="anchor-link" href="#Imagery"> </a>
+</h1>
+<p>Gather and setup the imagery to use for inputs.  It's important that we match the index inputs from the earlier analysis. This is a three-month Sentinel-2 composite.  Display it in the notebook for a sanity check.</p>
 
 </div>
 </div>
@@ -283,48 +293,48 @@ window.onload = wrap_img;
 
 <span class="k">def</span> <span class="nf">add_indexes</span><span class="p">(</span><span class="n">img</span><span class="p">):</span> 
     <span class="n">ndvi</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">expression</span><span class="p">(</span>
-        <span class="s1">&#39;(nir - red) / (nir  + red + a)&#39;</span><span class="p">,</span> <span class="p">{</span>
-            <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mf">1e-5</span><span class="p">,</span>
-            <span class="s1">&#39;nir&#39;</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;B8&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;B4&#39;</span><span class="p">)</span>
+        <span class="s1">'(nir - red) / (nir  + red + a)'</span><span class="p">,</span> <span class="p">{</span>
+            <span class="s1">'a'</span><span class="p">:</span> <span class="mf">1e-5</span><span class="p">,</span>
+            <span class="s1">'nir'</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">'B8'</span><span class="p">),</span>
+            <span class="s1">'red'</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">'B4'</span><span class="p">)</span>
         <span class="p">}</span>
        
-    <span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;NDVI&#39;</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">'NDVI'</span><span class="p">)</span>
 
     <span class="n">wdrvi</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">expression</span><span class="p">(</span>
-        <span class="s1">&#39;(a * nir - red) / (a * nir + red)&#39;</span><span class="p">,</span> <span class="p">{</span>
-            <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
-            <span class="s1">&#39;nir&#39;</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;B8&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;B4&#39;</span><span class="p">)</span>
+        <span class="s1">'(a * nir - red) / (a * nir + red)'</span><span class="p">,</span> <span class="p">{</span>
+            <span class="s1">'a'</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
+            <span class="s1">'nir'</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">'B8'</span><span class="p">),</span>
+            <span class="s1">'red'</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">'B4'</span><span class="p">)</span>
         <span class="p">}</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;WDRVI&#39;</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">'WDRVI'</span><span class="p">)</span>
 
     <span class="n">savi</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">expression</span><span class="p">(</span>
-        <span class="s1">&#39;1.5 * (nir - red) / (nir + red + 0.5)&#39;</span><span class="p">,</span> <span class="p">{</span>
-            <span class="s1">&#39;nir&#39;</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;B8&#39;</span><span class="p">),</span>
-            <span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;B4&#39;</span><span class="p">)</span>
+        <span class="s1">'1.5 * (nir - red) / (nir + red + 0.5)'</span><span class="p">,</span> <span class="p">{</span>
+            <span class="s1">'nir'</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">'B8'</span><span class="p">),</span>
+            <span class="s1">'red'</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">'B4'</span><span class="p">)</span>
         <span class="p">}</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;SAVI&#39;</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">'SAVI'</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">ndvi</span><span class="p">,</span> <span class="n">wdrvi</span><span class="p">,</span> <span class="n">savi</span><span class="p">])</span>
 
-<span class="n">image</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="s1">&#39;COPERNICUS/S2&#39;</span><span class="p">)</span> \
-    <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="s1">&#39;2018-01-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2018-04-01&#39;</span><span class="p">)</span> \
-    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Filter</span><span class="o">.</span><span class="n">lt</span><span class="p">(</span><span class="s1">&#39;CLOUDY_PIXEL_PERCENTAGE&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span> \
+<span class="n">image</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="s1">'COPERNICUS/S2'</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="s1">'2018-01-01'</span><span class="p">,</span> <span class="s1">'2018-04-01'</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Filter</span><span class="o">.</span><span class="n">lt</span><span class="p">(</span><span class="s1">'CLOUDY_PIXEL_PERCENTAGE'</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span> \
     <span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">add_indexes</span><span class="p">)</span> \
     <span class="o">.</span><span class="n">median</span><span class="p">()</span>
 
 <span class="c1"># Use folium to visualize the imagery.</span>
-<span class="n">mapid</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">getMapId</span><span class="p">({</span><span class="s1">&#39;bands&#39;</span><span class="p">:</span> <span class="n">BANDS</span><span class="p">,</span> <span class="s1">&#39;min&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<span class="n">mapid</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">getMapId</span><span class="p">({</span><span class="s1">'bands'</span><span class="p">:</span> <span class="n">BANDS</span><span class="p">,</span> <span class="s1">'min'</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'max'</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
 <span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span>              
               <span class="o">-</span><span class="mf">29.177943749121233</span><span class="p">,</span>
               <span class="mf">30.55984497070313</span><span class="p">,</span>
 <span class="p">])</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span>
-    <span class="n">tiles</span><span class="o">=</span><span class="n">mapid</span><span class="p">[</span><span class="s1">&#39;tile_fetcher&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">url_format</span><span class="p">,</span>
-    <span class="n">attr</span><span class="o">=</span><span class="s1">&#39;Map Data &amp;copy; &lt;a href=&quot;https://earthengine.google.com/&quot;&gt;Google Earth Engine&lt;/a&gt;&#39;</span><span class="p">,</span>
+    <span class="n">tiles</span><span class="o">=</span><span class="n">mapid</span><span class="p">[</span><span class="s1">'tile_fetcher'</span><span class="p">]</span><span class="o">.</span><span class="n">url_format</span><span class="p">,</span>
+    <span class="n">attr</span><span class="o">=</span><span class="s1">'Map Data &amp;copy; &lt;a href="https://earthengine.google.com/"&gt;Google Earth Engine&lt;/a&gt;'</span><span class="p">,</span>
     <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;median composite&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">'median composite'</span><span class="p">,</span>
   <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
 
 <span class="nb">map</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">())</span>
@@ -338,9 +348,12 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Load-our-saved-model">Load our saved model<a class="anchor-link" href="#Load-our-saved-model"> </a></h1>
+<h1 id="Load-our-saved-model">
+<a class="anchor" href="#Load-our-saved-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Load our saved model<a class="anchor-link" href="#Load-our-saved-model"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -352,7 +365,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load a trained model.</span>
-<span class="n">MODEL_DIR</span> <span class="o">=</span> <span class="s1">&#39;/content/drive/Shared drives/servir-sat-ml/data/model_out/10062020/&#39;</span>
+<span class="n">MODEL_DIR</span> <span class="o">=</span> <span class="s1">'/content/drive/Shared drives/servir-sat-ml/data/model_out/10062020/'</span>
 <span class="n">model</span> <span class="o">=</span>  <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="n">MODEL_DIR</span><span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
@@ -364,9 +377,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Prediction">Prediction<a class="anchor-link" href="#Prediction"> </a></h1><p>The prediction pipeline is:</p>
+<h1 id="Prediction">
+<a class="anchor" href="#Prediction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prediction<a class="anchor-link" href="#Prediction"> </a>
+</h1>
+<p>The prediction pipeline is:</p>
 <ol>
 <li>Export imagery on which to do predictions from Earth Engine in TFRecord format to Google Drive.</li>
 <li>Use the trained model to make the predictions.</li>
@@ -386,36 +403,36 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">doExport</span><span class="p">(</span><span class="n">out_image_base</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">region</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;Run the image export task.  Block until complete.</span>
-<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="sd">"""Run the image export task.  Block until complete.</span>
+<span class="sd">  """</span>
   <span class="n">task</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">batch</span><span class="o">.</span><span class="n">Export</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">toDrive</span><span class="p">(</span>
     <span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">BANDS</span><span class="p">),</span>
     <span class="n">description</span> <span class="o">=</span> <span class="n">out_image_base</span><span class="p">,</span>
     <span class="n">fileNamePrefix</span> <span class="o">=</span> <span class="n">out_image_base</span><span class="p">,</span>
     <span class="n">folder</span> <span class="o">=</span> <span class="n">FOLDER</span><span class="p">,</span>
-    <span class="n">region</span> <span class="o">=</span> <span class="n">region</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s1">&#39;coordinates&#39;</span><span class="p">],</span>
+    <span class="n">region</span> <span class="o">=</span> <span class="n">region</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s1">'coordinates'</span><span class="p">],</span>
     <span class="n">scale</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
-    <span class="n">fileFormat</span> <span class="o">=</span> <span class="s1">&#39;TFRecord&#39;</span><span class="p">,</span>
+    <span class="n">fileFormat</span> <span class="o">=</span> <span class="s1">'TFRecord'</span><span class="p">,</span>
     <span class="n">maxPixels</span> <span class="o">=</span> <span class="mf">1e10</span><span class="p">,</span>
     <span class="n">formatOptions</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="s1">&#39;patchDimensions&#39;</span><span class="p">:</span> <span class="n">shape</span><span class="p">,</span>
-      <span class="s1">&#39;compressed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-      <span class="s1">&#39;maxFileSize&#39;</span><span class="p">:</span> <span class="mi">104857600</span>
+      <span class="s1">'patchDimensions'</span><span class="p">:</span> <span class="n">shape</span><span class="p">,</span>
+      <span class="s1">'compressed'</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+      <span class="s1">'maxFileSize'</span><span class="p">:</span> <span class="mi">104857600</span>
     <span class="p">}</span>
   <span class="p">)</span>
   <span class="n">task</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 
   <span class="c1"># Block until the task completes.</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Running image export to Google Drive...&#39;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">'Running image export to Google Drive...'</span><span class="p">)</span>
   <span class="kn">import</span> <span class="nn">time</span>
   <span class="k">while</span> <span class="n">task</span><span class="o">.</span><span class="n">active</span><span class="p">():</span>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 
   <span class="c1"># Error condition</span>
-  <span class="k">if</span> <span class="n">task</span><span class="o">.</span><span class="n">status</span><span class="p">()[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;COMPLETED&#39;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error with image export.&#39;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">task</span><span class="o">.</span><span class="n">status</span><span class="p">()[</span><span class="s1">'state'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'COMPLETED'</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Error with image export.'</span><span class="p">)</span>
   <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Image export completed.&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Image export completed.'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -433,10 +450,10 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">doPrediction</span><span class="p">(</span><span class="n">out_image_base</span><span class="p">,</span> <span class="n">kernel_shape</span><span class="p">,</span> <span class="n">region</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;Perform inference on exported imagery.</span>
-<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="sd">"""Perform inference on exported imagery.</span>
+<span class="sd">  """</span>
 
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Looking for TFRecord files...&#39;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">'Looking for TFRecord files...'</span><span class="p">)</span>
 
   <span class="c1"># Get a list of all the files in the output bucket.</span>
   <span class="n">filesList</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ROOT_DIR</span><span class="p">,</span> <span class="n">FOLDER</span><span class="p">))</span>
@@ -448,9 +465,9 @@ window.onload = wrap_img;
   <span class="n">imageFilesList</span> <span class="o">=</span> <span class="p">[]</span>
   <span class="n">jsonFile</span> <span class="o">=</span> <span class="kc">None</span>
   <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">exportFilesList</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.tfrecord.gz&#39;</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.tfrecord.gz'</span><span class="p">):</span>
       <span class="n">imageFilesList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ROOT_DIR</span><span class="p">,</span> <span class="n">FOLDER</span><span class="p">,</span> <span class="n">f</span><span class="p">))</span>
-    <span class="k">elif</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.json&#39;</span><span class="p">):</span>
+    <span class="k">elif</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.json'</span><span class="p">):</span>
       <span class="n">jsonFile</span> <span class="o">=</span> <span class="n">f</span>
 
   <span class="c1"># Make sure the files are in the right order.</span>
@@ -462,11 +479,11 @@ window.onload = wrap_img;
 
   <span class="kn">import</span> <span class="nn">json</span>
   <span class="c1"># Load the contents of the mixer file to a JSON object.</span>
-  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ROOT_DIR</span><span class="p">,</span> <span class="n">FOLDER</span><span class="p">,</span> <span class="n">jsonFile</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ROOT_DIR</span><span class="p">,</span> <span class="n">FOLDER</span><span class="p">,</span> <span class="n">jsonFile</span><span class="p">),</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">mixer</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
   <span class="n">pprint</span><span class="p">(</span><span class="n">mixer</span><span class="p">)</span>
-  <span class="n">patches</span> <span class="o">=</span> <span class="n">mixer</span><span class="p">[</span><span class="s1">&#39;totalPatches&#39;</span><span class="p">]</span>
+  <span class="n">patches</span> <span class="o">=</span> <span class="n">mixer</span><span class="p">[</span><span class="s1">'totalPatches'</span><span class="p">]</span>
 
   <span class="c1"># Get set up for prediction.</span>
 
@@ -487,28 +504,28 @@ window.onload = wrap_img;
     <span class="k">return</span> <span class="n">stacked</span>
 
    <span class="c1"># Create a dataset from the TFRecord file(s) in Cloud Storage.</span>
-  <span class="n">imageDataset</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">TFRecordDataset</span><span class="p">(</span><span class="n">imageFilesList</span><span class="p">,</span> <span class="n">compression_type</span><span class="o">=</span><span class="s1">&#39;GZIP&#39;</span><span class="p">)</span>
+  <span class="n">imageDataset</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">TFRecordDataset</span><span class="p">(</span><span class="n">imageFilesList</span><span class="p">,</span> <span class="n">compression_type</span><span class="o">=</span><span class="s1">'GZIP'</span><span class="p">)</span>
   <span class="n">imageDataset</span> <span class="o">=</span> <span class="n">imageDataset</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">parse_image</span><span class="p">,</span> <span class="n">num_parallel_calls</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
   <span class="n">imageDataset</span> <span class="o">=</span> <span class="n">imageDataset</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">toTupleImage</span><span class="p">)</span><span class="o">.</span><span class="n">batch</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
   <span class="c1"># Perform inference.</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Running predictions...&#39;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">'Running predictions...'</span><span class="p">)</span>
   <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">imageDataset</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="n">patches</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
   <span class="c1"># print(predictions[0])</span>
 
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Writing predictions...&#39;</span><span class="p">)</span>
-  <span class="n">out_image_file</span> <span class="o">=</span> <span class="n">op</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ROOT_DIR</span><span class="p">,</span> <span class="n">FOLDER</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">out_image_base</span><span class="si">}</span><span class="s1">pred.TFRecord&#39;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">'Writing predictions...'</span><span class="p">)</span>
+  <span class="n">out_image_file</span> <span class="o">=</span> <span class="n">op</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ROOT_DIR</span><span class="p">,</span> <span class="n">FOLDER</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">out_image_base</span><span class="si">}</span><span class="s1">pred.TFRecord'</span><span class="p">)</span>
   <span class="n">writer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">TFRecordWriter</span><span class="p">(</span><span class="n">out_image_file</span><span class="p">)</span>
   <span class="n">patches</span> <span class="o">=</span> <span class="mi">0</span>
   <span class="k">for</span> <span class="n">predictionPatch</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Writing patch &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">patches</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Writing patch '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">patches</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'...'</span><span class="p">)</span>
     <span class="n">predictionPatch</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">predictionPatch</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
     <span class="c1"># Create an example.</span>
     <span class="n">example</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">Example</span><span class="p">(</span>
       <span class="n">features</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">Features</span><span class="p">(</span>
         <span class="n">feature</span><span class="o">=</span><span class="p">{</span>
-          <span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">Feature</span><span class="p">(</span>
+          <span class="s1">'class'</span><span class="p">:</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">Feature</span><span class="p">(</span>
               <span class="n">float_list</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">FloatList</span><span class="p">(</span>
                   <span class="n">value</span><span class="o">=</span><span class="n">predictionPatch</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()))</span>
         <span class="p">}</span>
@@ -528,7 +545,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now there's all the code needed to run the prediction pipeline, all that remains is to specify the output region in which to do the prediction, the names of the output files, where to put them, and the shape of the outputs.</p>
 
@@ -543,7 +561,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Base file name to use for TFRecord files and assets.</span>
-<span class="n">image_base</span> <span class="o">=</span> <span class="s1">&#39;servir_inference_demo_&#39;</span>
+<span class="n">image_base</span> <span class="o">=</span> <span class="s1">'servir_inference_demo_'</span>
 
 <span class="c1"># South Africa (near training data)</span>
 <span class="n">region</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Geometry</span><span class="o">.</span><span class="n">Polygon</span><span class="p">(</span>
@@ -608,9 +626,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Display-the-output">Display the output<a class="anchor-link" href="#Display-the-output"> </a></h1><p>One the data has been exported, the model has made predictions and the predictions have been written to a file, we need to <a href="https://developers.google.com/earth-engine/guides/tfrecord#uploading-tfrecords-to-earth-engine">manually import the TFRecord to Earth Engine</a>. Then we can display our crop type predictions as an image asset</p>
+<h1 id="Display-the-output">
+<a class="anchor" href="#Display-the-output" aria-hidden="true"><span class="octicon octicon-link"></span></a>Display the output<a class="anchor-link" href="#Display-the-output"> </a>
+</h1>
+<p>One the data has been exported, the model has made predictions and the predictions have been written to a file, we need to <a href="https://developers.google.com/earth-engine/guides/tfrecord#uploading-tfrecords-to-earth-engine">manually import the TFRecord to Earth Engine</a>. Then we can display our crop type predictions as an image asset</p>
 
 </div>
 </div>
@@ -622,17 +644,17 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">out_image</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;users/drew/servir_inference_demo_-mixer&#39;</span><span class="p">)</span>
-<span class="n">mapid</span> <span class="o">=</span> <span class="n">out_image</span><span class="o">.</span><span class="n">getMapId</span><span class="p">({</span><span class="s1">&#39;min&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;palette&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;00A600&#39;</span><span class="p">,</span><span class="s1">&#39;63C600&#39;</span><span class="p">,</span><span class="s1">&#39;E6E600&#39;</span><span class="p">,</span><span class="s1">&#39;E9BD3A&#39;</span><span class="p">,</span><span class="s1">&#39;ECB176&#39;</span><span class="p">,</span><span class="s1">&#39;EFC2B3&#39;</span><span class="p">,</span><span class="s1">&#39;F2F2F2&#39;</span><span class="p">]})</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">out_image</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s1">'users/drew/servir_inference_demo_-mixer'</span><span class="p">)</span>
+<span class="n">mapid</span> <span class="o">=</span> <span class="n">out_image</span><span class="o">.</span><span class="n">getMapId</span><span class="p">({</span><span class="s1">'min'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">'max'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">'palette'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'00A600'</span><span class="p">,</span><span class="s1">'63C600'</span><span class="p">,</span><span class="s1">'E6E600'</span><span class="p">,</span><span class="s1">'E9BD3A'</span><span class="p">,</span><span class="s1">'ECB176'</span><span class="p">,</span><span class="s1">'EFC2B3'</span><span class="p">,</span><span class="s1">'F2F2F2'</span><span class="p">]})</span>
 <span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span>              
               <span class="o">-</span><span class="mf">29.177943749121233</span><span class="p">,</span>
               <span class="mf">30.55984497070313</span><span class="p">,</span>
 <span class="p">])</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span>
-    <span class="n">tiles</span><span class="o">=</span><span class="n">mapid</span><span class="p">[</span><span class="s1">&#39;tile_fetcher&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">url_format</span><span class="p">,</span>
-    <span class="n">attr</span><span class="o">=</span><span class="s1">&#39;Map Data &amp;copy; &lt;a href=&quot;https://earthengine.google.com/&quot;&gt;Google Earth Engine&lt;/a&gt;&#39;</span><span class="p">,</span>
+    <span class="n">tiles</span><span class="o">=</span><span class="n">mapid</span><span class="p">[</span><span class="s1">'tile_fetcher'</span><span class="p">]</span><span class="o">.</span><span class="n">url_format</span><span class="p">,</span>
+    <span class="n">attr</span><span class="o">=</span><span class="s1">'Map Data &amp;copy; &lt;a href="https://earthengine.google.com/"&gt;Google Earth Engine&lt;/a&gt;'</span><span class="p">,</span>
     <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;predicted crop type&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">'predicted crop type'</span><span class="p">,</span>
   <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
 <span class="nb">map</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">())</span>
 <span class="nb">map</span>
