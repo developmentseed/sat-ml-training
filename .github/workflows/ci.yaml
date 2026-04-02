@@ -25,7 +25,7 @@ jobs:
           
 
     - name: Copy Repository Contents
-      uses: actions/checkout@main
+      uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98 # main
       with:
         persist-credentials: false
 
@@ -51,7 +51,7 @@ jobs:
 
     - name: Deploy
       if: github.event_name == 'push'
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3
       with:
         deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
         publish_dir: ./_site

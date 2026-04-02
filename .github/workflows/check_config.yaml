@@ -5,10 +5,10 @@ jobs:
  check-config:
    runs-on: ubuntu-latest
    steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98 # main
 
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
       with:
         python-version: 3.12
 
@@ -39,7 +39,7 @@ jobs:
 
     - name: Create issue if baseurl rule is violated
       if: steps.baseurl.outcome == 'failure'
-      uses: actions/github-script@0.6.0
+      uses: actions/github-script@5363c89495e2ddaea4a64feb5f586af2cb6118c0 # 0.6.0
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
@@ -66,7 +66,7 @@ jobs:
 
     - name: Create Issue if User Pages rule is violated
       if: steps.userpage.outcome == 'failure'
-      uses: actions/github-script@0.6.0
+      uses: actions/github-script@5363c89495e2ddaea4a64feb5f586af2cb6118c0 # 0.6.0
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
